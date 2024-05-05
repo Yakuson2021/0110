@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="YMのサイトです">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        
+          <!--======== jQuery発展編ここから ========-->
+          <!-- slickをCDN経由で読み込む -->
+        <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css">
+        <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
+          <!--======== jQuery発展編ここまで ========-->
+          
+        <title>contact</title>
+    </head>
+<body>
+    
+    <header>
+        <h1 id="main-title">
+         <a href="index.html" class="contact">contact</a>
+        </h1>
+    </header>
+        
+  <main>
+   <a href="#" id="scroll-to-top" class="scroll-to-top">TOP</a>
+    <article>
+      <section id="contact">
+        <div>
+            私たちへご連絡される場合は、下記までお問い合わせください。
+            
+        </div>
+        <h2 class="index-h2">CONTACT</h2>
+        <h3>お問い合わせ</h3>
+       
+        <form action="https://api.staticforms.xyz/submit" method="post">
+            <input type="text" name="honeypot" style="display:none">
+            <input type="hidden" name="accessKey" value="2e6b1427-92a0-4d2e-9dcc-b2bf62c2cb6f">
+            <input type="hidden" name="subject" value="Webサイトからお問い合わせがありました" />
+            <input type="hidden" name="replyTo" value="mrbgq698@yahoo.co.jp">
+            <input type="hidden" name="redirectTo" value="">
+            
+        <form id="form">
+           <div>
+             <div class="contact-heading">
+               <label class="contact-label">お名前<span class="contact-span">必須</span></label>
+             </div>
+             <div>
+               <input id="name" type="text" name="name" placeholder="入力してください" class="contact-textbox">
+             </div>
+           </div>
+           <div>
+             <div class="contact-heading">
+               <label class="contact-label">フリガナ<span class="contact-span">必須</span></label>
+             </div>
+             <div>
+               <input id="furigana" type="text" name="hurigana" placeholder="入力してください" class="contact-textbox">
+             </div>
+           </div>
+           <div>
+             <div class="contact-heading">
+               <label class="contact-label">メールアドレス<span class="contact-span">必須</span></label>
+             </div>
+             <div>
+               <input id="email" type="text" name="email" placeholder="入力してください" class="contact-textbox">
+             </div>
+           </div>
+           <div>
+             <div class="contact-heading">
+               <label class="contact-label">電話番号</label>
+             </div>
+             <div>
+               <input id="tel" type="text" name="tel" placeholder="入力してください" class="contact-textbox">
+             </div>
+           </div>
+           
+           <div>
+             <div class="contact-heading">
+               <label class="contact-label">お問い合わせ内容<span class="contact-span">必須</span></label>
+             </div>
+             <div>
+               <textarea id="message" class="contact-textarea " placeholder="入力してください" name="message"></textarea>
+             </div>
+           </div>
+          
+           <div>
+             <div class="contact-heading">
+               <label class="contact-label">ご希望の連絡先<span class="contact-span">必須</span></label>
+             </div>
+             <div>
+               <input class="radiobutton" type="radio" value="tel" name="contact" checked><label>お電話</label>
+               <input class="radiobutton" type="radio" value="mail" name="contact"><label>メール</label>
+               <input class="radiobutton" type="radio" value="both" name="contact"><label>どちらでも</label>
+             </div>
+           </div>
+           
+           <div>
+             <div class="contact-heading">
+               <label class="contact-label">個人情報の取り扱い</label>
+             </div>
+             <div>
+               <details>
+                 <summary>お問い合わせフォームの個人情報の取り扱いについて</summary>
+                 <div>
+                   <span>１．名称又は氏名</span><br>
+                   ********<br><br>
+                   <span>２．個人情報保護管理者（若しくはその代理人）の氏名又は職名、所属及び連絡先
+                     </span><br>
+                   メールアドレス：****@****.com<br>
+                   TEL：xxx-xxx-xxxx<br>
+                   <span>３．個人情報の利用目的</span><br>
+                   ・本サービス及び本サービスに関連する情報の提供又はそれらに関する連絡のため<br>
+                   ・ユーザーの本人確認のため<br>
+                   ・当方サイトのご案内のため<br>
+                   ・当方の宣伝等（電子メールによるものを含むものとします。）<br><br>
+                   <span>４．個人情報の取り扱い業務の委託</span><br>
+                   個人情報の取扱業務の全部または一部を外部に業務委託する場合があります。<br>
+                   その際、弊社は、個人情報を適切に保護できる管理体制を敷き実行していることを条件として<br>
+                   委託先を厳選したうえで、機密保持契約を委託先と締結し、皆様の個人情報を厳密に管理させます。<br><br>
+                   <span>５．個人情報の開示等の請求</span><br>
+                   皆さまは、当方に対してご自身の個人情報の開示等（利用目的の通知、開示、内容の訂正・追加・削除、利用の停止または消去、第三者への提供の停止）に関して、当社問合わせ窓口に申し出ることができます。<br>
+                   その際、当方は皆さまご本人を確認させていただいたうえで、合理的な期間内に対応いたします。<br><br>
+                   なお、個人情報に関する当方問合わせ先は、次の通りです。<br><br>
+                   LOWHIM個人情報問合せ窓口<br>
+                   〒***-****　************************<br>
+                   メールアドレス：****@****.com　TEL：xxx-xxx-xxxx<br><br>
+                   <span>６．個人情報を提供されることの任意性について</span><br><br>
+                   皆さまがご自身の個人情報を当方に提供されるか否かは、皆さまのご判断によりますが、もしご提供されない場合には、適切なサービスが提供できない場合がありますので予めご了承ください。
+                 </div>
+               </details>
+               <input id="agree" type="checkbox" name="agree">
+               <span>個人情報の取り扱いについてご同意いただける場合は、チェックをしてください。</span>
+             </div>
+           </div>
+
+<!----------------------------------------------送信ボタン---------------------------------------------->
+           <div>
+               <input id="submit" class="button-more" type="image" src="images/button-submit.png" alt="送信する">
+               <!--<input type="submit" id="send2" value="送信">-->
+               <!--<a input type="submit" id="send2" value="送信">送信</a>-->
+               <!--<a id="send2" value="送信">送信</a>-->
+           </div>
+          </form>
+<!-------------------------------------------------------------------------------------------->
+        </form>
+      </section>
+    
+        <div>
+          <a id="top" href="index.html">
+            TOPへもどる
+          </a>
+        </div> 
+　<!--</div>-->
+        <footer>
+                <div id="footer-link">
+                    <a href="#">TOP</a>
+                    <a href="more.html">オフショット</a>
+                    <a href="contact.html">お問い合わせ</a>
+                </div>
+            <p>&copy;LOWHIM. All rights reserved.</p>
+        </footer>
+    </article>
+  </main>
+          
+          <!-- モーダルウィンドウ -->
+        　<div id="modal">
+            　<div class="modal-content">
+                　<img id="modal-img">
+                　<div id="modal-close">閉じる</div>
+            　</div>
+          </div>
+            　
+          <!-- jQueryをCDN経由で読み込む -->
+          <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+            crossorigin="anonymous"></script>
+          <!-- slickをCDN経由で読み込む -->
+          <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+          <!-- JSファイルを読み込む-->
+          <script src="script.js"></script>
+        
+          <!--======== jQuery発展編ここまで ========-->
+  
+</body>
+
+</html>

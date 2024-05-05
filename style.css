@@ -99,6 +99,7 @@ section {
   object-fit: cover;
 　object-position: top; /* 追加 */
  }
+ 
 
  #title1,#title2  {
     padding-top: 10px;
@@ -117,7 +118,7 @@ section {
 
  .report{
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     justify-content: center;
     margin: 20px auto 20px auto;
     column-gap: 20px;
@@ -133,6 +134,14 @@ section {
     margin: 0 auto;
     max-width: 100%;
  }
+ 
+ .subpic-top {
+   width: 100%;
+   height: 250px;
+   object-fit: cover; /* width, heightといっしょに使います */
+ }
+ 
+ 
 
  /*.report-item-center{*/
  /*   padding-right: 30px;*/
@@ -151,6 +160,10 @@ section {
     padding-bottom: 20px;
     font-family: "Noto Sans JP", sans-serif;
  }
+ 
+ footer a {
+    font-family: "Noto Sans JP", sans-serif;
+}
 
  P {
     font-size: 20px;
@@ -171,10 +184,10 @@ section {
 .modal-content {
     bottom: 18%;
     width: 100%;
-    max-width: 55%;
+    max-width: 40%;
     margin: 15% auto;
     background: white;
-    padding: 1%;
+    padding: 2%;
     position: relative;
 }
 
@@ -224,7 +237,7 @@ section {
 }
 
 /*もっとみるのリンク*/
-#page-more {
+#send,#page-more  {
     display: block;
     width: 200px;
     height: 50px;
@@ -237,9 +250,9 @@ section {
     font-size: 20px;
     border-radius: 5px;
     transition: 0.3s;
-}
+}nd
 
-#page-more:hover {
+#page-more:hover,#send:hover  {
     background: #0056b3;
 }
 
@@ -247,7 +260,119 @@ footer p {
     padding: 20px;
 }
 
+#send2 {
+    margin: auto;
+    display: block;
+    width: 550px;
+    height: 50px;
+    /*margin-left: 5%;*/
+    background: #007BFF;
+    color: #fff;
+    text-decoration: none;
+    text-align: center;
+    line-height: 50px;
+    font-size: 20px;
+    border-radius: 5px;
+    transition: 0.3s;
 }
+#page-more:hover,#send2:hover  {
+    background: #0056b3;
+}
+
+}
+
+/* お問い合わせ */
+#contact {
+margin: 80px auto 80px auto;
+}
+
+/* 外枠 */
+#contact > form > div {
+display: flex;
+flex-direction: row;
+flex-wrap: wrap;
+padding-bottom: 30px;
+}
+
+/* 左列の見出し */
+.contact-heading {
+width: 240px;
+align-self: center;
+}
+/* 見出しのラベル */
+.contact-label {
+font-weight: bold;
+}
+/* 必須 */
+.contact-span {
+color: #ce2222;
+margin: 0 0 0 20px;
+font-weight: bold;
+}
+
+/* テキストボックス */
+.contact-textbox {
+border-top: 0;
+border-left: 0;
+border-right: 0;
+border-bottom-width: 1px;
+border-bottom-color: #707070;
+border-bottom-style: solid;
+background-color: #fafafa;
+width: 400px;
+height: 56px;
+}
+/* お問い合わせ内容のテキストエリア */
+.contact-textarea {
+border-top: 0;
+border-left: 0;
+border-right: 0;
+border-bottom-width: 1px;
+border-bottom-color: #707070;
+border-bottom-style: solid;
+background-color: #fafafa;
+width: 400px;
+height: 200px;
+}
+
+/* 個人情報の取り扱い */
+details {
+width: 700px;
+}
+details > div {
+background-color: #fafafa;
+padding: 20px;
+} 
+details > div > span {
+font-weight: bold;
+}
+
+#footer-link {
+text-align: center;
+padding: 80px 80px 30px 80px;
+}
+
+#footer-link > a {
+text-decoration: none;
+margin: 10px;
+}
+
+#footer-link > a:link {
+color: #0000FF;
+}
+#footer-link > a:visited {
+color: #0000FF;
+}
+#footer-link > a:hover {
+color: #0000FF;
+text-decoration: underline;
+}
+#footer-link > a:active {
+color: #0000FF;
+}
+
+
+
 
 /*================
  スマホ用のスタイル 
@@ -277,16 +402,21 @@ footer p {
   
   body {
     overflow-x: auto;
-    padding:10px 20px 10px;
+    padding: 10px 11px 10px 10px;
   }
   
    img {
-    width: 95%;
+    width: 96%;
     margin: auto;
     display: block;
  }
 
-  
+ .subpic-top {
+   width: 100%;
+   height: 250px;
+   object-fit: cover; /* width, heightといっしょに使います */
+ }
+
     /* PC用ナビゲーション非表示 */
   #nav-pc {
    display: none;
@@ -330,6 +460,12 @@ footer p {
   /*  background-position: center center;*/
   /*}*/
   
+   ul {
+    list-style-type:none;
+    margin-block-start: 0em;
+    margin-block-end: 0em;
+    padding-inline-start: 0px;
+ }
   
    #title1,#title2  {
       padding-top: 5px;
@@ -359,6 +495,9 @@ footer p {
     font-family: "Noto Sans JP", sans-serif;
  }
  
+ details {
+    width: 320px;
+ }
  
   /* #modal-close {*/
   /* display: none;*/
@@ -377,12 +516,12 @@ footer p {
  }
  
  .modal-content {
-     top: 10%;
+     top: 32%;
      width: 100%;
      max-width: 100%;
-     /*margin: 5% auto;*/
+     margin: -2%;
      background: white;
-     /*padding: 1%;*/
+     padding: 2%;
      position: relative;
  }
  
@@ -391,6 +530,7 @@ footer p {
      right: 15%;
      top: 1%;
      cursor: pointer;
+     background-color: white;
  }
  /*モーダルウィンドウのデザイン終了*/
  
@@ -400,7 +540,7 @@ footer p {
 }
 
 /*もっとみるのリンク*/
-#page-more {
+#page-more, #send  {
     display: block;
     width: 200px;
     height: 50px;
@@ -415,7 +555,7 @@ footer p {
     transition: 0.3s;
 }
 
-#page-more:hover {
+#page-more, #send :hover {
     background: #0056b3;
 }
  #top {
@@ -437,4 +577,140 @@ footer p {
     padding: 20px;
 }
 
+footer a {
+    font-family: "Noto Sans JP", sans-serif;
+}
+
+#footer-link {
+text-align: initial;
+/*text-align: center;*/
+/*padding: 80px 80px 30px 80px;*/
+}
+
+#footer-link > a {
+text-decoration: none;
+margin: 10px;
+}
+
+#footer-link > a:link {
+color: #0000FF;
+}
+#footer-link > a:visited {
+color: #0000FF;
+}
+#footer-link > a:hover {
+color: #0000FF;
+text-decoration: underline;
+}
+#footer-link > a:active {
+color: #0000FF;
+}
+
+
+/* お問い合わせ */
+#contact {
+ margin: 80px 20px 80px 20px;
+}
+
+
+#contact > h3 {
+ margin-bottom: 20px;
+}
+
+#contact > form > div {
+ margin-bottom: 20px;
+}
+
+.contact-heading {
+ margin-bottom: 20px;
+}
+
+   /* ラベル */
+   .contact-label {
+     font-weight: bold;
+   }
+ 
+   /* 必須 */
+   .contact-span {
+     color: #ce2222;
+     margin: 0 0 0 20px;
+     font-weight: bold;
+   }
+ 
+   .contact-textbox {
+     height: 56px;
+     border-top: 0;
+     border-left: 0;
+     border-right: 0;
+     background-color: #fafafa;
+     border-bottom-color: #707070;
+     border-bottom-width: 1px;
+     border-style: solid;
+     min-width: 300px;
+     width: 100%;
+   }
+ 
+   .contact-textarea {
+     height: 150px;
+     border-top: 0;
+     border-left: 0;
+     border-right: 0;
+     background-color: #fafafa;
+     width: 100%;
+   }
+ 
+   .radiobutton {
+     margin-bottom: 20px;
+   }
+ 
+   .radiobutton + label::after {
+     content: "\A";
+     white-space: pre;
+   }
+   
+   #send2 {
+    font-size: x-large    
+   }
+#page-more:hover,#send2:hover  {
+    background: #0056b3;
+}
+
+  /* フッター */
+  footer {
+    margin-top: 10px;
+    background-color: #0d0d0d;
+    padding: 30px 20px 50px 20px;
+  }
+  
+  footer p {
+   font-size: 12px;
+   display: block;
+   margin-top: 30px;
+   color: #ffffff;
+}
+
+  #footer-link > a {
+   text-decoration: none;
+   display: block;
+   background-repeat: no-repeat;
+ 　background-position: right top;
+}
+
+  #footer-link > a:link {
+     color: #ffffff;
+   }
+   #footer-link > a:visited {
+     color: #ffffff;
+   }
+   #footer-link > a:hover {
+     color: #ffffff;
+     /*text-decoration: underline;*/
+   }
+   #footer-link > a:active {
+     color: #ffffff;
+   }
+  
+    #footer-link {
+     margin-bottom: 50px;
+   }
 }
